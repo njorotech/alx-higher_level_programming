@@ -2,6 +2,7 @@
 
 """A rectangle class"""
 
+
 class Rectangle:
     """A class that defines a rectangle"""
 

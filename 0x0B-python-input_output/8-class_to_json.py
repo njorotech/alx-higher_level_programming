@@ -5,4 +5,4 @@
 def class_to_json(obj):
     """returns the dictionary for JSON serialization"""
 
-    return dir(obj)
+    print(obj)

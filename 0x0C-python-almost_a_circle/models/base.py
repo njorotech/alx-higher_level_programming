@@ -6,6 +6,7 @@ class Base:
     """Base class for all the classes in this project"""
 
     __nb_objects = 0
+
     def __init__(self, id=None):
         """Initializes an object of the base class"""
 

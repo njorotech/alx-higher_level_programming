@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """A module for a square class"""
-
-
 from models.rectangle import Rectangle
+
+
 class Square(Rectangle):
     """Class Square that inherits from Rectangle"""
 
@@ -12,12 +12,13 @@ class Square(Rectangle):
     def __str__(self):
         """string representation of square objects"""
 
-        return "[Square] ({}) {}/{} - {}".format(self.id, self.x, self.y, self.width)
+        re = "[Square] ({}) {}/{} - {}"
+        return re.format(self.id, self.x, self.y, self.width)
 
     @property
     def size(self):
         """return size value"""
-        
+
         return size
 
     @size.setter

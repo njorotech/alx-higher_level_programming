@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 """First rectangle module"""
-
 from models.base import Base
+
+
 class Rectangle(Base):
     """Class rectangle that inherits from Base"""
 
@@ -101,7 +102,8 @@ class Rectangle(Base):
     def __str__(self):
         """String representation"""
 
-        return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.__x, self.__y, self.__width, self.__height)
+        re = "[Rectangle] ({}) {}/{} - {}/{}"
+        return re.format(self.id, self.__x, self.__y, self.__width, self.__height)
 
     def update(self, *args, **kwargs):
         """Assigns an argument to each attribute"""
@@ -121,4 +123,3 @@ class Rectangle(Base):
         elif kwargs:
             for key, value in kwargs.items():
                 setattr(self, key, value)
-

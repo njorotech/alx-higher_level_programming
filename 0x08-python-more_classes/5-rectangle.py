@@ -64,10 +64,16 @@ class Rectangle:
         if (self.__height == 0) or (self.__width == 0):
             return ""
         else:
-            i = 0
-            while i <= self.__height:
-                i += 1
-                return "{}".format("#" * self.__width)
+            return "\n".join(["#" * self.__width] * self.height)
+
+    def __repr__(self):
+        """returns a string representation of the rectangle to be able
+        to recreate a new instance by using eval()
+        """
+
+        return "Rectangle({}, {})".format(self.width, self.height)
 
     def __del__(self):
+        """Deletes an instance"""
+
         print("Bye rectangle...")

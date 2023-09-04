@@ -74,7 +74,8 @@ class Rectangle:
     def __repr__(self):
         """string representation to recreate new instance of rectangle"""
 
-        return "Rectangle(" + str(self.__height) + ", " + str(self.__width) + ")"
+        return ("Rectangle(" + str(self.__height) +
+                ", " + str(self.__width) + ")")
 
     def __del__(self):
         """Deletes instance of a Rectangle"""

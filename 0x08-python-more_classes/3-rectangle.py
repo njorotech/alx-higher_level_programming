@@ -66,7 +66,7 @@ class Rectangle:
             empty_string = ""
             return empty_string
         else:
+            string_print = ""
             for i in range(self.__height):
-                for j in range(self.__width):
-                    print("#", end="")
-                print()
+                string_print += "#" * self.__width + "\n"
+            return string_print

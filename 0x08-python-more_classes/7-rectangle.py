@@ -73,13 +73,13 @@ class Rectangle:
             string_print = ""
             for i in range(self.__height):
                 string_print += Rectangle.print_symbol * self.__width + "\n"
-            return string_print
+            return string_print[:-1]
 
     def __repr__(self):
         """string representation to recreate new instance of rectangle"""
 
-        return ("Rectangle(" + str(self.__height) +
-                ", " + str(self.__width) + ")")
+        return ("Rectangle(" + str(self.__width) +
+                ", " + str(self.__height) + ")")
 
     def __del__(self):
         """Deletes instance of a Rectangle"""

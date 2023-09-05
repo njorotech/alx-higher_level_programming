@@ -69,4 +69,4 @@ class Rectangle:
             string_print = ""
             for i in range(self.__height):
                 string_print += "#" * self.__width + "\n"
-            return string_print
+            return string_print[:-1]

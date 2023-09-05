@@ -72,7 +72,7 @@ class Rectangle:
         else:
             string_print = ""
             for i in range(self.__height):
-                string_print += Rectangle.print_symbol * self.__width + "\n"
+                string_print += str(self.print_symbol) * self.__width + "\n"
             return string_print[:-1]
 
     def __repr__(self):

@@ -9,6 +9,9 @@ This is a file to test add_integer function
 	>>> add_integer(100.3, -2)
 	98
 	>>> add_integer(4, "School")
+	Traceback (most recent call last):
+		...
+	TypeError: b must be an integer
 	b must be an integer
 	>>> add_integer(None)
 	a must be an integer

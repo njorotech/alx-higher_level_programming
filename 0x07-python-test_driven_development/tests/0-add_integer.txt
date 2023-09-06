@@ -14,4 +14,6 @@ This is a file to test add_integer function
 	TypeError: b must be an integer
 	b must be an integer
 	>>> add_integer(None)
-	a must be an integer
+	Traceback (most recent call last):
+		...
+	TypeError: a must be an integer

@@ -12,7 +12,6 @@ This is a file to test add_integer function
 	Traceback (most recent call last):
 		...
 	TypeError: b must be an integer
-	b must be an integer
 	>>> add_integer(None)
 	Traceback (most recent call last):
 		...

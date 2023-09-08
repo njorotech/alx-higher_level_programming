@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-""" Module for integers addition"""
+"""This module is for integers addition"""
 
 
 def add_integer(a, b=98):

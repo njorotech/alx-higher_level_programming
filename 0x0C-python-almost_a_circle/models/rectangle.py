@@ -69,7 +69,7 @@ class Rectangle(Base):
         """Retrieves the value of x"""
 
         return self.__x
-    
+
     @x.setter
     def x(self, value):
         """Sets the value of x"""
@@ -110,5 +110,5 @@ class Rectangle(Base):
     def __str__(self):
         """String representation of the Rectangle class"""
 
-        return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.__x,
-                self.__y, self.__width, self.__height)
+        return ("[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.__x,
+                self.__y, self.__width, self.__height))

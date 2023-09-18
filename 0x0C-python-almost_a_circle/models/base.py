@@ -36,5 +36,5 @@ class Base:
             list_objs = []
         else:
             with open(file_name, 'w', encoding="utf-8") as f:
-                f.write(cls.to_json_string([obj.to_dictionary() for obj in list_objs]))
-
+                dict_list = [obj.to_dictionary() for obj in list_objs]
+                f.write(cls.to_json_string(dict_list))

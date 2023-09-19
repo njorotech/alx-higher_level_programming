@@ -84,15 +84,15 @@ class Rectangle(Base):
     def y(self):
         """Retrieves the value of y"""
 
-        return self.__x
+        return self.__y
 
     @y.setter
     def y(self, value):
         """Sets the value of x"""
 
-        if not isinstance(y, int):
+        if not isinstance(value, int):
             raise TypeError("y must be an integer")
-        elif y < 0:
+        elif value < 0:
             raise ValueError("y must be >= 0")
         self.__y = value
 

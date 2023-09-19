@@ -53,7 +53,9 @@ class Base:
     def create(cls, **dictionary):
         """returns an instance with all attributes already set"""
 
-        return None
+        dummy = Rectangle(2, 3, 0, 0)
+        dummy.update(dictionary)
+        return dummy
 
     @classmethod
     def load_from_file(cls):

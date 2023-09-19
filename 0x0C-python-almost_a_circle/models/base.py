@@ -33,7 +33,8 @@ class Base:
         class_name = cls.__name__
         file_name = class_name + ".json"
         if list_objs is None:
-            list_objs = []
+            with open(file_name, 'w', encoding="utf-8") as f:
+                f.write("[]")
         else:
             with open(file_name, 'w', encoding="utf-8") as f:
                 dict_list = [obj.to_dictionary() for obj in list_objs]
@@ -47,3 +48,15 @@ class Base:
             return {}
         else:
             return json.loads(json_string)
+
+    @classmethod
+    def create(cls, **dictionary):
+        """returns an instance with all attributes already set"""
+
+        return None
+
+    @classmethod
+    def load_from_file(cls):
+        """returns a list of instances"""
+
+        filename = cls.__name__ + ".json"

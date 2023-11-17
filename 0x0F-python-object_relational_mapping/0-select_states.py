@@ -2,10 +2,16 @@
 """Get all states module"""
 
 import MySQLdb
+from sys import argv
 
 if __name__ == '__main__':
+
+    user = argv[1]
+    password = argv[2]
+    databaseName = argv[3]
+
     dbc = MySQLdb.connect(host="localhost", port=3306,
-                          user="sam", password="sam", db="hbtn_0e_0_usa")
+                          user=user, password=password, db=databaseName)
 
     cur = dbc.cursor()
 

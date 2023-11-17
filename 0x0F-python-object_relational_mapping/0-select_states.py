@@ -10,7 +10,8 @@ cur = dbc.cursor()
 
 cur.execute("SELECT * FROM states ORDER BY id ASC")
 rows = cur.fetchall()
-for row in rows:
-    print(row)
-cur.close()
-dbc.close()
+if __name__ == "__main__":
+    for row in rows:
+        print(row)
+    cur.close()
+    dbc.close()

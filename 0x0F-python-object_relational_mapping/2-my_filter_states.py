@@ -16,8 +16,7 @@ if __name__ == '__main__':
 
     cur = dbc.cursor()
 
-    cur.execute("SELECT * FROM states WHERE name = %s ORDER BY id ASC",
-                (stateName,))
+    cur.execute("SELECT * FROM states WHERE name = '{}' ORDER BY id ASC".format(stateName))
     rows = cur.fetchall()
     for row in rows:
         print(row)

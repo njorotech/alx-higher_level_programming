@@ -16,7 +16,7 @@ if (args === 2) {
   }
   for (let i = 2; i <= args; i++)
   {
-    const argsValue = Number(args_list[i]);
+    const argsValue = Number(argsList[i]);
     if (argsValue > second && argsValue < big) {
       second = argsValue;
     }

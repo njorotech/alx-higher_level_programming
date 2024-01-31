@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 #displays the size of the body of the response
-curl -s "$1" -o /dev/null -w '%{size_download}'
+curl -s "$1" -o /dev/null -w '%{size_download}\n'

@@ -9,7 +9,7 @@ from sys import argv
 
 if __name__ == "__main__":
     url = argv[1]
-    email = 'njorogemuchoki15@gmail.com'
+    email = argv[2]
     values = {'email': email}
     data = urlencode(values)
     data = data.encode('ascii')
